@@ -1,17 +1,13 @@
 <script setup>
   import Footer from '@/components/Footer.vue';
-  </script>
+  import ResumeButton from '@/components/ResumeButton.vue';
+  
+</script>
 
 <template>
   <section class="content bg-[#002642] h-screen">
-    <section class="div text-white">
-      
-    </section>
-    <!-- <Hero /> -->
-    <!-- <HomeCards /> -->
-    <!-- <JobListings :limit="3" :show-button="true"/> -->
-     <Footer  />
-
+    <ResumeButton />
+    <Footer  />
   </section>
 </template>
 

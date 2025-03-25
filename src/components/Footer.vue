@@ -1,7 +1,3 @@
-<script setup>
-
-</script>
-
 <template>
   <section class="fixed left-5 bottom-5 flex gap-5 w-full">
     <a href="https://www.linkedin.com/in/john-hines-788893183/"  >
@@ -22,5 +18,9 @@
 <style>
   section {
     height: 45px;
+  }
+
+  svg:hover { 
+    color: var(--j-yellow)
   }
 </style>
