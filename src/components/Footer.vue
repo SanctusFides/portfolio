@@ -15,7 +15,7 @@
   </section>
 </template>
 
-<style>
+<style scoped>
   section {
     height: 45px;
   }

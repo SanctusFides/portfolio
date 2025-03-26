@@ -1,12 +1,25 @@
+<script setup>
+
+  const downloadResume = () => {
+    console.log("click");
+    window.open('/files/JH_CV.pdf', '_blank');
+  }
+
+</script>
+
 <template>
-  <section class="div text-white">
-    <a href="/files/JH_CV.pdf" class="downloadbutton" download="JH_CV.pdf"> Download Resume
-    </a>
+  <section>
+      <!-- <a href="/files/JH_CV.pdf" class="downloadbutton" download="John Hines Resume.pdf"> 
+        Download Resume
+      </a> -->
+      <button @click="downloadResume()" class="downloadbbutton">
+        Download Resume
+      </button>
   </section>
 </template>
 
-<style>
- .downloadbutton {
+<style scoped>
+ button {
     background-color: var(--j-yellow);
     color: black;
     padding-top: 1rem;
@@ -17,7 +30,7 @@
     font-weight: bold;
     font-size: large;
  }
- .downloadbutton:hover {
+ button:hover {
     background-color: var(--j-claret);
     color: white;
     padding-top: 1rem;

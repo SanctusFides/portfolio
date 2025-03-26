@@ -10,18 +10,19 @@
 </script>
 
 <template>
-  <nav class="border-b border-[#E59500]">
+  <!-- ues this commented line for a borderline, but without is more flat mat design -->
+  <!-- <nav class="border-b border-[#E59500]"> -->
+  <nav>
       <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div class="flex h-20 items-center justify-between">
           <div
             class="flex flex-1 items-center justify-center md:items-stretch md:justify-start"
           >
-            <!-- Left Hand Side -->
             <RouterLink class="flex flex-shrink-0 items-center mr-4" to="/">
-              <img class="h-16 w-auto" :src="logo" alt="John Hines" />
-              <span class="hidden md:block text-white text-3xl font-bold ml-2"
-                >John Hines</span
-              >
+              <img class="h-16 w-auto" :src="logo" alt="John Hines Logo" />
+              <span class="hidden md:block text-[#E59500] text-3xl font-medium ml-2"
+                >John Hines
+              </span>
             </RouterLink>
             <div class="md:ml-auto">
               <div class="flex space-x-5 py-3">
@@ -63,7 +64,7 @@
     </nav>
 </template>
 
-<style>
+<style scoped>
 a {
   color: white;
 }
