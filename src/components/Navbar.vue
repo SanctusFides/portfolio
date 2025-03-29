@@ -39,13 +39,13 @@
                 <RouterLink
                   to="/projects"
                   :class="[isActiveLink('/projects') ? 'bg-[#840032]' : 'hover:bg-[#E59500] hover:text-black', 'text-lg', 'px-3', 'py-2', 'rounded-md']"
-                  >Projects
+                  >Projects & Skills
                 </RouterLink>
-                <RouterLink
+                <!-- <RouterLink
                   to="/skills"
                   :class="[isActiveLink('/skills') ? 'bg-[#840032]' : 'hover:bg-[#E59500] hover:text-black', 'text-lg', 'px-3', 'py-2', 'rounded-md']"
                   >Skills
-                </RouterLink>
+                </RouterLink> -->
                 <RouterLink
                   to="/about"
                   :class="[isActiveLink('/about') ? 'bg-[#840032]' : 'hover:bg-[#E59500] hover:text-black', 'text-lg', 'px-3', 'py-2', 'rounded-md']"
