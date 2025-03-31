@@ -1,5 +1,29 @@
 <script setup>
-  
+  import { Resend } from 'resend';
+
+  const resend = new Resend(import.meta.env.VITE_RESEND_API_KEY);
+  const sender = import.meta.env.VITE_SENDER;
+  const receiver = import.meta.env.VITE_RECEIVER;
+
+  type FormData = {
+    name: String,
+    
+  }
+
+  (async function () {
+    const {data, error} = await resend.emails.send({
+      from: sender,
+      to:[receiver],
+      subject: '! Contact Form Request!',
+      html: 'test',
+    });
+
+    if (error) {
+      return console.error({ error });
+    }
+    console.log(data);
+    
+  })();
 
 </script>
 
