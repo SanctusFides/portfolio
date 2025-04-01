@@ -1,4 +1,3 @@
-import type { Request, Response } from "express";
 import { Resend } from "resend";
 
 // Using a .env file to store the API key and email addresses for sending and receiving the emails sent from Resend 
@@ -6,10 +5,11 @@ const api_key = import.meta.env.VITE_RESEND_API_KEY;
 const sender = import.meta.env.VITE_SENDER;
 const receiver = import.meta.env.VITE_RECEIVER;
 // Initialize Resend using Api Key from above
+
 const resend = new Resend(api_key);
 
 // Creating the Type for our form data to be used as the type in our function that creates the email template
-type FormData = {
+export type FormData = {
   name: string;
   email: string;
   message: string;
@@ -21,18 +21,14 @@ type FormData = {
 const createEmail = (formData: FormData) => `
 Contact Name: ${formData.name}
 Contact Email: ${formData.email}
-Contact Date: ${new Date().toLocaleString()}
+Contact Date: ${formData.date}
 
 Body:
 ${formData.message}
 `;
 
-export const pVar = () => {
-  console.log(sender);
+export async function contactHandler(formData: FormData) {
   
-}
-
-export default async function handler(req: Request, res: Response) {
   try {
     const {data, error} = await resend.emails.send({
           from: `${sender}`,
