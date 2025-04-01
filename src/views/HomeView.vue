@@ -1,7 +1,6 @@
 <script setup>
-  import Footer from '@/components/Footer.vue';
-  import ResumeButton from '@/components/ResumeButton.vue';
-  
+  import Footer from '../components/Footer.vue';
+  import ResumeButton from '../components/ResumeButton.vue';  
 </script>
 
 <template>
