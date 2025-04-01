@@ -1,4 +1,4 @@
-import { IncomingMessage, ServerResponse } from 'http';
+import type { Request, Response } from "express";
 import { Resend } from "resend";
 
 // Using a .env file to store the API key and email addresses for sending and receiving the emails sent from Resend 
@@ -27,7 +27,12 @@ Body:
 ${formData.message}
 `;
 
-export default async function handler(req: IncomingMessage, res: ServerResponse) {
+export const pVar = () => {
+  console.log(sender);
+  
+}
+
+export default async function handler(req: Request, res: Response) {
   try {
     const {data, error} = await resend.emails.send({
           from: `${sender}`,
