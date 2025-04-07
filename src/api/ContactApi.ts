@@ -1,9 +1,9 @@
 import { Resend } from "resend";
 
 // Using a .env file to store the API key and email addresses for sending and receiving the emails sent from Resend 
-const api_key = import.meta.env.VITE_RESEND_API_KEY;
-const sender = import.meta.env.VITE_SENDER;
-const receiver = import.meta.env.VITE_RECEIVER;
+const api_key: string = import.meta.env.VITE_RESEND_API_KEY;
+const sender: string = import.meta.env.VITE_SENDER;
+const receiver: string = import.meta.env.VITE_RECEIVER;
 // Initialize Resend using Api Key from above
 
 const resend = new Resend(api_key);
@@ -15,6 +15,7 @@ export type FormData = {
   message: string;
   date: string;
 }
+
 // Using the form structure, construct a string literal to format and plug in the form values. 
 // Date aspect is currently temporary just to get in the current one, but saw a great idea about capturing time at submission
 // to use for rate-limiting the submit button. So will most likely follow that example and use that as this value

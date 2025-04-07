@@ -1,22 +1,22 @@
 <script lang="ts" setup>
-  import { ref } from 'vue';
-  import { type FormData,contactHandler } from '../api/ContactApi';
+  import ContactForm from '../components/ContactForm.vue';
+  // import { ref } from 'vue';
+  // import { type FormData,contactHandler } from '../api/ContactApi';
 
-  const form = ref({
-    name: '',
-    email: '',
-    message: '',
-    date: ''
-  })
+  // const form = ref({
+  //   name: '',
+  //   email: '',
+  //   message: '',
+  //   date: ''
+  // })
 
-  const emit = defineEmits(['submit'])
+  // const emit = defineEmits(['submit'])
 
-  const submit = async () => {
-    // emit('submit', { ...form.value })
-    form.value.date = new Date().toLocaleString();
-
-    contactHandler(form.value);
-  }
+  // const submit = async () => {
+  //   form.value.date = new Date().toLocaleString();
+  //   emit('submit', { ...form.value })
+  //   contactHandler(form.value);
+  // }
 
 </script>
 
@@ -28,8 +28,8 @@
       <!-- this div is for the forms outter body -->
       <div class="div ">
         <h1 class="text-center text-6xl font-semibold mb-6">Let's Get In Touch</h1>
-        <form @submit.prevent="submit">
-            <!-- This div is for sizing the inputs and arranging the form items -->
+        <ContactForm />
+        <!-- <form @submit.prevent="submit">
             <div class="form flex flex-col items-center px-6 py-8 mb-4 border rounded-md m-4">
               <div class="mb-4">
                 <label class="block" for="name">Name</label>
@@ -62,7 +62,7 @@
                 </button>
               </div>
             </div>
-          </form>
+          </form> -->
 
 
 
