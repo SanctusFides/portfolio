@@ -55,3 +55,55 @@
     </div>
   </form>
 </template>
+
+<style scoped>
+  h1, label {
+    color: white;
+  }
+
+  .form {
+    background-color: var(--j-darkblue);
+  }
+
+  .div, .form {
+    border-color: var(--j-yellow);
+  }
+
+  input, textarea {
+    border-color: var(--j-claret);
+    padding: 4px;
+    box-sizing:border-box;
+  }
+
+  .pi {
+    color: black;
+  }
+
+
+  .submit-button {
+    background-color: var(--j-yellow);
+    color: black;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.375rem;
+    font-weight: bold;
+    font-size: large;
+  }
+
+  .submit-button:hover {
+    background-color: var(--j-claret);
+    color: white;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.375rem;
+    font-weight: bold;
+    font-size: large;
+  }
+  .submit-button:hover .pi {
+    color:white
+  }
+</style>

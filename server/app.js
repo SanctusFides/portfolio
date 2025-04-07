@@ -9,6 +9,11 @@ app.use(morgan('tiny'));
 app.use(bodyParser.json());
 app.use(cors());
 
+app.post('/test', (req, res) => {
+  res.send({
+    messsage: `User: ${req.body.email} has been registered`
+  })
+})
 
 const port = process.env.PORT || 5000;
 
