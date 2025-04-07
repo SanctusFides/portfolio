@@ -1,6 +1,6 @@
 <script lang="ts" setup>
   import { ref } from 'vue';
-  import { type FormData,contactHandler } from '../api/ContactApi';
+  import { type FormData,contactHandler } from '../services/api/ContactApi';
 
   const form = ref({
     name: '',
