@@ -14,7 +14,11 @@
   const submit = async () => {
     form.value.date = new Date().toLocaleString();
     emit('submit', { ...form.value })
-    contactHandler(form.value);
+    const response = contactHandler(form.value);
+    response.then(() => {
+      console.log('back from api');
+    })
+    
   }
 </script>
 

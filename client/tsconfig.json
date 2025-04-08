@@ -10,6 +10,9 @@
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
 
+
+    // COPY THE FUCKING CONFIG AND SHIT FROM THE OTHER PROJECT AND GET THE JS STUFF PROPERLY SWAPPED OUT WITH TS
+
     /* Strictness */
     "strict": true,
     "noUncheckedIndexedAccess": true,

@@ -1,3 +1,4 @@
+import axios from "axios";
 import { Resend } from "resend";
 
 // Using a .env file to store the API key and email addresses for sending and receiving the emails sent from Resend 
@@ -29,22 +30,22 @@ ${formData.message}
 `;
 
 export async function contactHandler(formData: FormData) {
-  
-  try {
-    const {data, error} = await resend.emails.send({
-          from: `${sender}`,
-          to:[`${receiver}`],
-          subject: '! Contact Form Request !',
-          html: 'test',
-        });
+  axios.post('http://localhost:5000/test', formData);
+  // try {
+  //   const {data, error} = await resend.emails.send({
+  //         from: `${sender}`,
+  //         to:[`${receiver}`],
+  //         subject: '! Contact Form Request !',
+  //         html: 'test',
+  //       });
     
-        if (error) {
-          return console.error({ error });
-        }
-        console.log(data);
-  } catch (error) {
+  //       if (error) {
+  //         return console.error({ error });
+  //       }
+  //       console.log(data);
+  // } catch (error) {
     
-  }
+  // }
 }
 
 // Need to validate the form details incase anything funky was changed on the source to remove the required checks
