@@ -30,7 +30,7 @@ ${formData.message}
 `;
 
 export async function contactHandler(formData: FormData) {
-  axios.post('http://localhost:5000/test', formData);
+  axios.post('http://localhost:5000/api/email', formData);
   // try {
   //   const {data, error} = await resend.emails.send({
   //         from: `${sender}`,
