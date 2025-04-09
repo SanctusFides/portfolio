@@ -42,31 +42,6 @@ app.post("/api/email", async (req, res) => {
 });
 
 
-
 const port = process.env.PORT || 5000;
 
 app.listen(port, () => console.log(`Server started on port ${port}`));
-
-
-// app.post('/api/email', async (req, res) => {
-//   // res.send({
-//   //   messsage: `API HIT`
-//   // })
-//   console.log('API HIT');
-//   console.log(req.body);
-//   try {
-//     const {data, error} = await resend.emails.send({
-//       from: `${sender}`,
-//       to:[`${receiver}`],
-//       subject: '! Contact Form Request !',
-//       html: 'test',
-//     })
-
-//     if (error) {
-//       return console.error({ error });
-//     }
-//     console.log(data);
-//   } catch (error) {
-//     console.log(error);
-//   }
-// })

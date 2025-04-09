@@ -18,7 +18,8 @@
     "morgan": "^1.10.0",
     "nodemon": "^3.1.9",
     "resend": "^4.2.0",
-    "server": "file:"
+    "server": "file:",
+    "serverless-http": "^3.2.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.23.0",
