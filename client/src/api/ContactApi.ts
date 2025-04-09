@@ -1,13 +1,8 @@
 import axios from "axios";
 import { Resend } from "resend";
 
-// Using a .env file to store the API key and email addresses for sending and receiving the emails sent from Resend 
-const api_key: string = import.meta.env.VITE_RESEND_API_KEY;
-const sender: string = import.meta.env.VITE_SENDER;
-const receiver: string = import.meta.env.VITE_RECEIVER;
-// Initialize Resend using Api Key from above
-
-const resend = new Resend(api_key);
+// Using a .env file to store the url for our API request that handles sending the email 
+const api_url: string = import.meta.env.VITE_API_EMAIL_URL;
 
 // Creating the Type for our form data to be used as the type in our function that creates the email template
 export type FormData = {
@@ -29,36 +24,9 @@ Body:
 ${formData.message}
 `;
 
+// Need to validate the form details incase anything funky was changed on the source to remove the required checks
 export async function contactHandler(formData: FormData) {
-  axios.post('http://localhost:5000/api/email', formData);
-  // try {
-  //   const {data, error} = await resend.emails.send({
-  //         from: `${sender}`,
-  //         to:[`${receiver}`],
-  //         subject: '! Contact Form Request !',
-  //         html: 'test',
-  //       });
-    
-  //       if (error) {
-  //         return console.error({ error });
-  //       }
-  //       console.log(data);
-  // } catch (error) {
-    
-  // }
+  axios.post(`${api_url}`, formData);
 }
 
-// Need to validate the form details incase anything funky was changed on the source to remove the required checks
  
-
-// async function handleEmailing(req: IncomingMessage, res: ServerResponse) {
-//   try {
-    
-//   } catch (error) {
-//     // If error is caught, create a response for generic server error and return it
-//     res.setHeader('Content-Type', 'text/html');
-//     res.writeHead(500,'Error Occured - Unable to send message');
-//     res.end();
-//     return res;
-//   }
-// } 
