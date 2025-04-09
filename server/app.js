@@ -27,18 +27,18 @@ app.use(cors());
 app.post("/api/email", async (req, res) => {
   console.log(req.body);
   
-  // const { data, error } = await resend.emails.send({
-  //   from: sender,
-  //   to: receiver,
-  //   subject: '! Contact Form Request !',
-  //   html: "<strong>it works!</strong>",
-  // });
+  const { data, error } = await resend.emails.send({
+    from: sender,
+    to: receiver,
+    subject: '! Contact Form Request !',
+    html: "<strong>it works!</strong>",
+  });
 
-  // if (error) {
-  //   return res.status(400).json({ error });
-  // }
+  if (error) {
+    return res.status(400).json({ error });
+  }
 
-  // res.status(200).json({ data });
+  res.status(200).json({ data });
 });
 
 

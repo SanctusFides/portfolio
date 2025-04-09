@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // Using a .env file to store the API key and email addresses for sending and receiving the emails sent from Resend 
-const api_url: string = import.meta.env.VITE_RESEND_API_URL;
+const api_url: string = import.meta.env.VITE_API_URL;
 
 
 // Creating the Type for our form data to be used as the type in our function that creates the email template
@@ -24,9 +24,11 @@ Body:
 ${formData.message}
 `;
 
+
 // Need to validate the form details incase anything funky was changed on the source to remove the required checks
 export async function contactHandler(formData: FormData) {
-  axios.post('http://localhost:5000/api/email', formData);
+  // axios.post('http://localhost:5000/api/email', formData);
+  axios.post(`${api_url}`, createEmail(formData));
 
 }
 
