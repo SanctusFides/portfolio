@@ -4,12 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node server/index.js",
     "dev": "vite ",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@netlify/functions": "^3.0.4",
     "@tailwindcss/postcss": "^4.0.15",
     "@tailwindcss/vite": "^4.0.15",
     "axios": "^1.8.4",
@@ -22,6 +22,7 @@
     "portfo": "file:",
     "primeicons": "^7.0.0",
     "resend": "^4.2.0",
+    "serverless-http": "^3.2.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0",
     "vue-spinner": "^1.0.4",
