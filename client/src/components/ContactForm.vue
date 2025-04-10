@@ -11,7 +11,7 @@
 
   const emit = defineEmits(['submit'])
 
-  const submit = async () => {
+  const handleSubmit = async () => {
     form.value.date = new Date().toLocaleString();
     emit('submit', { ...form.value })
     const response = contactHandler(form.value);
@@ -23,7 +23,7 @@
 </script>
 
 <template>
-  <form @submit.prevent="submit">
+  <form @submit.prevent="handleSubmit">
     <!-- This div is for sizing the inputs and arranging the form items -->
     <div class="form flex flex-col items-center px-6 py-8 mb-4 border rounded-md m-4">
       <div class="mb-4">
