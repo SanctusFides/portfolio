@@ -12,6 +12,7 @@
     "@netlify/functions": "^3.0.4",
     "@tailwindcss/postcss": "^4.0.15",
     "@tailwindcss/vite": "^4.0.15",
+    "aws-sdk": "^2.1692.0",
     "axios": "^1.8.4",
     "body-parser": "^2.2.0",
     "cors": "^2.8.5",

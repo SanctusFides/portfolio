@@ -1,4 +1,6 @@
 import axios from "axios";
+import aws from 'aws-sdk';
+import http from 'https';
 
 // Using a .env file to store the API key and email addresses for sending and receiving the emails sent from Resend 
 const api_url: string = import.meta.env.VITE_API_EMAIL_URL;
@@ -38,7 +40,7 @@ ${formData.message}
 export async function contactHandler(formData: FormData) {
   console.log("inside contact handler, about to make post request...");
   console.log(api_url);
-  axios.post(`${api_url}`, formatEmail(formData));  
+  await axios.post(`${api_url}`, formatEmail(formData));  
 }
 
  
