@@ -33,10 +33,13 @@ ${formData.message}
 `;
 }
 
+
 // Need to validate the form details incase anything funky was changed on the source to remove the required checks
 export async function contactHandler(formData: FormData) {
+  console.log(api_url);
+  
   // axios.post('http://localhost:5000/api/email', formData);
-  axios.post(`${api_url}`, formatEmail(formData));  
+  // axios.post(`${api_url}`, formatEmail(formData));  
 }
 
  
