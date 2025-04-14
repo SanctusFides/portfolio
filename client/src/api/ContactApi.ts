@@ -1,6 +1,4 @@
 import axios from "axios";
-import aws from 'aws-sdk';
-import http from 'https';
 
 // Using a .env file to store the API key and email addresses for sending and receiving the emails sent from Resend 
 const api_url: string = import.meta.env.VITE_API_EMAIL_URL;
@@ -16,16 +14,16 @@ export type FormData = {
 // Using the form structure, construct a string literal to format and plug in the form values. 
 // Date aspect is currently temporary just to get in the current one, but saw a great idea about capturing time at submission
 // to use for rate-limiting the submit button. So will most likely follow that example and use that as this value
-function formatEmail(formData: FormData) {
-  return `
-Contact Name: ${formData.name}
-Contact Email: ${formData.email}
-Contact Date: ${formData.date}
+// function formatEmail(formData: FormData) {
+//   return `
+// Contact Name: ${formData.name}
+// Contact Email: ${formData.email}
+// Contact Date: ${formData.date}
 
-Body:
-${formData.message}
-`;
-}
+// Body:
+// ${formData.message}
+// `;
+// }
 
 
 // Need to validate the form details incase anything funky was changed on the source to remove the required checks

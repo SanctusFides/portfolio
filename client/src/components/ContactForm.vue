@@ -12,7 +12,6 @@
   const emit = defineEmits(['submit'])
 
   const handleSubmit = async () => {
-    form.value.date = new Date().toLocaleString();
     emit('submit', { ...form.value })
     const response = contactHandler(form.value);
     response.then(() => {
