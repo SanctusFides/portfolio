@@ -16,14 +16,6 @@ export type FormData = {
 // Using the form structure, construct a string literal to format and plug in the form values. 
 // Date aspect is currently temporary just to get in the current one, but saw a great idea about capturing time at submission
 // to use for rate-limiting the submit button. So will most likely follow that example and use that as this value
-const createEmail = (formData: FormData) => `
-Contact Name: ${formData.name}
-Contact Email: ${formData.email}
-Contact Date: ${formData.date}
-
-Body:
-${formData.message}
-`;
 function formatEmail(formData: FormData) {
   return `
 Contact Name: ${formData.name}
@@ -40,7 +32,8 @@ ${formData.message}
 export async function contactHandler(formData: FormData) {
   console.log("inside contact handler, about to make post request...");
   console.log(api_url);
-  await axios.post(`${api_url}`, formatEmail(formData));  
+  
+  await axios.post(`${api_url}`, formData);  
 }
 
  
