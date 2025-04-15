@@ -1,8 +1,8 @@
 <script lang="ts" setup>
   import { ref } from 'vue';
   import { type FormData,contactHandler } from '../api/ContactApi';
-  import { useToast } from 'vue-toastification';
 
+  import { useToast } from 'vue-toastification';
   const toast = useToast();
 
   const form = ref({
@@ -17,12 +17,15 @@
   const handleSubmit = async () => {
     emit('submit', { ...form.value })
     const response = contactHandler(form.value);
-    response.catch(() =>{
+    response.then((res) => {
+      if (res.status == 200) {
+        console.log('back from api');
+        toast.success("Message Sent!")
+      }
+    }).catch(() =>{
       toast.error("Message Unable To Send");
-    }).then(() => {
-      console.log('back from api');
-      toast.success("Message Sent!")
-    });
+    }) 
+    
   }
 </script>
 
