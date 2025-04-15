@@ -18,6 +18,8 @@
     emit('submit', { ...form.value })
     const response = contactHandler(form.value);
     response.then((res) => {
+      console.log(res.status);
+      
       if (res.status == 200) {
         console.log('back from api');
         toast.success("Message Sent!")
