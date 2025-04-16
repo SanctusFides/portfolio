@@ -3,6 +3,9 @@
   to = "/index.html"
   status = 200
 
+[functions]
+  directory = "functions"
+
 [[headers]]
   for = "/*"
     [headers.values]
