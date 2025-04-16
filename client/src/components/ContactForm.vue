@@ -24,7 +24,8 @@
         console.log('back from api');
         toast.success("Message Sent!")
       }
-    }).catch(() =>{
+    }).catch((error) =>{
+      console.log(error);
       toast.error("Message Unable To Send");
     }) 
     

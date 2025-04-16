@@ -30,7 +30,15 @@ export type FormData = {
 export async function contactHandler(formData: FormData) {
   console.log("inside contact handler, about to make post request...");  
   console.log(api_url);  
-  return await axios.post(`${api_url}`, formData); 
+  return await axios.post(`${api_url}`,{
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "*",
+      "Access-Control-Allow-Headers": "*",
+    },
+    body:{
+      formData
+    }}); 
 }
 
  
