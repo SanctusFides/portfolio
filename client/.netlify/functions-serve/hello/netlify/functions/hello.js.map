@@ -1,8 +1,8 @@
 {
   "version": 3,
   "sources": ["../../../../Code/portfolio/client/netlify/functions/hello.js"],
-  "sourceRoot": "C:/Users/John1/AppData/Local/Temp/tmp-49952-ajNbh6ndBV4P",
-  "sourcesContent": ["exports.handler = async (event, context) => {\r\n  return {\r\n    statusCode: 200,\r\n    body: JSON.stringify({\r\n      message: \"Hello World\"\r\n    })\r\n  }\r\n}"],
-  "mappings": ";;;AAAA,QAAQ,UAAU,OAAO,OAAO,YAAY;AAC1C,SAAO;AAAA,IACL,YAAY;AAAA,IACZ,MAAM,KAAK,UAAU;AAAA,MACnB,SAAS;AAAA,IACX,CAAC;AAAA,EACH;AACF;",
+  "sourceRoot": "C:/Users/John1/AppData/Local/Temp/tmp-22408-BVoW1pDSP6MH",
+  "sourcesContent": ["export const handler = async () => {\r\n\treturn {\r\n\t\tstatusCode: 200,\r\n\t\tbody: JSON.stringify({\r\n\t\t\tmessage: 'This is what will be returned!'\r\n\t\t})\r\n\t}\r\n}"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAO,IAAM,UAAU,YAAY;AAClC,SAAO;AAAA,IACN,YAAY;AAAA,IACZ,MAAM,KAAK,UAAU;AAAA,MACpB,SAAS;AAAA,IACV,CAAC;AAAA,EACF;AACD;",
   "names": []
 }

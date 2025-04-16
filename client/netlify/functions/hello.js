@@ -1,8 +1,8 @@
-exports.handler = async (event, context) => {
-  return {
-    statusCode: 200,
-    body: JSON.stringify({
-      message: "Hello World"
-    })
-  }
+export const handler = async () => {
+	return {
+		statusCode: 200,
+		body: JSON.stringify({
+			message: 'This is what will be returned!'
+		})
+	}
 }

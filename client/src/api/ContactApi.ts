@@ -44,7 +44,7 @@ export async function contactHandler(formData: FormData) {
   //     formData
   //   }}); 
   //   }}); 
-  return await axios.post(`${api_url}`);
+  return await axios.post(`${api_url}`, formData);
 }
 
  
