@@ -29,7 +29,8 @@ export type FormData = {
 // Need to validate the form details incase anything funky was changed on the source to remove the required checks
 export async function contactHandler(formData: FormData) {
   console.log("inside contact handler, about to make post request...");  
-  return await axios.post(`${api_url}`, formData);  
+  console.log(api_url);  
+  return await axios.post(`${api_url}`, formData); 
 }
 
  
