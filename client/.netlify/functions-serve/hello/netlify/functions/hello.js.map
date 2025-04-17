@@ -1,7 +1,7 @@
 {
   "version": 3,
   "sources": ["../../../../Code/portfolio/client/netlify/functions/hello.js"],
-  "sourceRoot": "C:/Users/John1/AppData/Local/Temp/tmp-22408-BVoW1pDSP6MH",
+  "sourceRoot": "C:/Users/John1/AppData/Local/Temp/tmp-44272-INPP1gZw6j34",
   "sourcesContent": ["export const handler = async () => {\r\n\treturn {\r\n\t\tstatusCode: 200,\r\n\t\tbody: JSON.stringify({\r\n\t\t\tmessage: 'This is what will be returned!'\r\n\t\t})\r\n\t}\r\n}"],
   "mappings": ";;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAO,IAAM,UAAU,YAAY;AAClC,SAAO;AAAA,IACN,YAAY;AAAA,IACZ,MAAM,KAAK,UAAU;AAAA,MACpB,SAAS;AAAA,IACV,CAAC;AAAA,EACF;AACD;",
   "names": []

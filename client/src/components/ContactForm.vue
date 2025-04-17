@@ -15,6 +15,8 @@
   const emit = defineEmits(['submit'])
 
   const handleSubmit = async () => {
+    console.log("! Submit Button !");
+    
     emit('submit', { ...form.value })
     const response = contactHandler(form.value);
     response.then((res) => {

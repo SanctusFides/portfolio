@@ -44,6 +44,7 @@ export async function contactHandler(formData: FormData) {
   //     formData
   //   }}); 
   //   }}); 
+  // NEED TO GET THE ORIGIN URL TO APPEND TO API URL
   return await axios.post(`${api_url}`, formData);
 }
 
