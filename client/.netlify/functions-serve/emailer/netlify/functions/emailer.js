@@ -64,12 +64,7 @@ var handler = async (event) => {
     console.log(data.body);
     return {
       statusCode: 200,
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "*",
-        "Access-Control-Allow-Headers": "*"
-      },
-      body: data
+      body: "works!"
     };
   }
 };
