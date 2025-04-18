@@ -4,7 +4,8 @@
 </script>
 
 <template>
-  <section class="content bg-[#002642] h-screen">
+  <section class="content bg-[#002642] h-screen ">
+    
     <ResumeButton />
     <Footer  />
   </section>

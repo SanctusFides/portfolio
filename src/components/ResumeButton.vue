@@ -1,7 +1,6 @@
 <script setup>
 
   const downloadResume = () => {
-    console.log("click");
     window.open('/files/JH_CV.pdf', '_blank');
   }
 
@@ -9,9 +8,6 @@
 
 <template>
   <section>
-      <!-- <a href="/files/JH_CV.pdf" class="downloadbutton" download="John Hines Resume.pdf"> 
-        Download Resume
-      </a> -->
       <button @click="downloadResume()" class="downloadbbutton">
         Download Resume
       </button>

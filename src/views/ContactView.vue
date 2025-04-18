@@ -1,5 +1,6 @@
 <script lang="ts" setup>
   import ContactForm from '../components/ContactForm.vue';
+  import Footer from '../components/Footer.vue';
 </script>
 
 <template>
@@ -12,9 +13,9 @@
         <h1 class="text-center text-6xl font-semibold mb-6">Let's Get In Touch</h1>
         <ContactForm />
       </div>
-
     </div>
   </section>
+  <Footer />
 </template>
 
 <style scoped>
