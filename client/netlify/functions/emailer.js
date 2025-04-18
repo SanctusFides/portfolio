@@ -1,17 +1,11 @@
 export const handler = async (event) => {
   console.log('Inside netlify funct handler');
-  // const RESEND_API_KEY = import.meta.env.VITE_RESEND_API_KEY;
   const RESEND_API_KEY = process.env.VITE_RESEND_API_KEY;
   const body = JSON.parse(event.body);
-  // console.log(body);
   const name = body.name;
   const email = body.email;
   const message = body.message;
   const timestamp = new Date().toLocaleString();
-  console.log(name);
-  console.log(email);
-  console.log(message);
-  console.log(timestamp);
   // return {
   //   statusCode: 200,
   //   headers:{
@@ -44,11 +38,7 @@ export const handler = async (event) => {
         `,
     }),
   });
-  
   if (res.ok) {
-    const data = await res.json();
-    console.log("res was okay");
-    console.log(data.body);
     return {
       statusCode: 200,
       body: 'works!',

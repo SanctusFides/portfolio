@@ -31,10 +31,6 @@ var handler = async (event) => {
   const email = body.email;
   const message = body.message;
   const timestamp = (/* @__PURE__ */ new Date()).toLocaleString();
-  console.log(name);
-  console.log(email);
-  console.log(message);
-  console.log(timestamp);
   const res = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: {
@@ -59,9 +55,6 @@ var handler = async (event) => {
     })
   });
   if (res.ok) {
-    const data = await res.json();
-    console.log("res was okay");
-    console.log(data.body);
     return {
       statusCode: 200,
       body: "works!"
