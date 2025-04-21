@@ -1,9 +1,12 @@
 <script lang="ts" setup>
   import ContactForm from '../components/ContactForm.vue';
   import Footer from '../components/Footer.vue';
+  import Navbar from '../components/Navbar.vue';
 </script>
 
 <template>
+  <Navbar />
+
   <!-- <section class="content bg-[#002642] h-screen flex flex-col items-center justify-items-center"> -->
   <section class="content bg-[#002642] h-screen">
     <!-- container class for positioning the content in the middle and a litle bit down from the top -->
