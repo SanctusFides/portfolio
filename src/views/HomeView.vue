@@ -4,13 +4,25 @@
 </script>
 
 <template>
-  <section class="content bg-[#002642] h-screen ">
+  <section class=" bg-[#002642] h-screen">
+    <div class=" m-auto  py-16">
+      <div class="flex gap-5" container>
+        <div class="flex-1">
+          <h1>John Hines</h1>
+        </div>
+        <div class="flex-1">
+          <ResumeButton />
+        </div>
+      </div>
     
-    <ResumeButton />
+    </div>
     <Footer  />
   </section>
 </template>
 
-<style>
-  
+<style scoped>
+  h1{
+    color: white;
+    font-size: 5rem;
+  }
 </style>
