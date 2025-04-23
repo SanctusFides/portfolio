@@ -73,7 +73,7 @@
   </nav> -->
   <!-- Reason for having 2 nav separate navs is that it's easier to swap them out entirely vs having to transform them on the fly  -->
   <!-- nav big is reserved for full sized devices -->
-  <nav class="nav big">
+  <nav class="nav big font-manrope">
       <div class="mx-auto max-w-7xl  px-2 sm:px-6 lg:px-8">
           <div class="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
             <RouterLink class="flex flex-shrink-0 items-center mr-4" to="/">
@@ -118,7 +118,7 @@
         </div>
   </nav>
   <!-- Nav small is used for mobile device sizes, this is designed to be reactive for them -->
-  <nav class="nav small border-b border-[#E59500] px-2 sm:px-6 lg:px-8" id="navBar">
+  <nav class="nav small font-manrope border-b border-[#E59500] px-2 sm:px-6 lg:px-8" id="navBar">
     <div class="flex">
       <RouterLink class="mr-4" to="/">
         <img class="h-16 w-auto" :src="logo" alt="John Hines Logo" />

@@ -7,9 +7,9 @@
 
 <template>
   <Navbar />
-  <section class=" bg-[#002642] h-screen">
+  <section class=" bg-blue h-screen font-manrope">
     <div class="flex gap-5 m-auto py-16">
-      <div class="flex-1">
+      <div class="flex-1 ml-2">
         <h1>John Hines</h1>
       </div>
       <div class="flex-1">

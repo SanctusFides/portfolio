@@ -37,7 +37,7 @@
 <template>
   <form @submit.prevent="handleSubmit">
     <!-- This div is for sizing the inputs and arranging the form items -->
-    <div class="form flex flex-col items-center px-6 py-8 mb-4 border rounded-md m-4">
+    <div class="form flex flex-col items-center px-6 py-8 mb-4 border rounded-md m-4 ">
       <div class="mb-4">
         <label class="block" for="name">Name</label>
         <input v-model="form.name" class="w-80 border-2 rounded" type="text" name="name" id="name" placeholder="John Doe" required>
@@ -51,13 +51,13 @@
       <div class="mb-4">
         <label class="block" for="name">Message</label>
         <textarea 
-        v-model="form.message"
-        class="w-80 border-2 rounded"
-        rows="5"
-        cols="33"
-        name="message" 
-        id="message" 
-        maxlength="1000" placeholder= "Enter your message" required/>
+          v-model="form.message"
+          class="w-80 border-2 rounded"
+          rows="5"
+          cols="33"
+          name="message" 
+          id="message" 
+          maxlength="1000" placeholder= "Enter your message" required/>
       </div>
       
       <div class="justify-self-center ">
@@ -89,6 +89,7 @@
     border-color: var(--j-claret);
     padding: 4px;
     box-sizing:border-box;
+    background-color: white;
   }
 
   .pi {

@@ -1,6 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+  --font-manrope: "Manrope", san-serif;
+  --color-blue: #002642;
+}
+
 
 :root {
   --j-yellow: #e59500;
@@ -14,5 +20,6 @@ body {
   margin: 0 auto;
   padding: 0;
   min-height: 100vh;
+  overflow: hidden;
 }
 
