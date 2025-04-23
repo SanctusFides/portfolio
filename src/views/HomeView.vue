@@ -7,13 +7,16 @@
 
 <template>
   <Navbar />
-  <section class=" bg-blue h-screen font-manrope">
-    <div class="flex gap-5 m-auto py-16">
-      <div class="flex-1 ml-2">
-        <h1>John Hines</h1>
+  <section class="@container bg-blue h-screen font-manrope text-white flex">
+    <div class="flex flex-col @sm:flex-row w-full @sm:h-full py-16">
+      <div class="flex flex-col justify-center items-center flex-1 ml-2 gap-3">
+        <h1 class="text-6xl">John Hines</h1>
+        <p class="text-xl">Junior Software Engineer</p>
+        <p>Full-Stack Developer</p>
       </div>
-      <div class="flex-1">
+      <div class="flex justify-center items-center flex-1">
         <ResumeButton />
+        <h2></h2>
       </div>
     </div>
   </section>
@@ -22,7 +25,6 @@
 
 <style scoped>
   h1{
-    color: white;
-    font-size: 5rem;
+    /* font-size: 5rem; */
   }
 </style>

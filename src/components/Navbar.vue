@@ -10,10 +10,10 @@
 
   function collapse() {
     var x = document.getElementById("navBar");
-    if (x.className === "nav small border-b border-[#E59500] px-2 sm:px-6 lg:px-8") {
+    if (x.className === "nav small font-manrope border-b border-[#E59500] px-2 sm:px-6 lg:px-8") {
       x.className += " responsive";
     } else {
-      x.className = "nav small border-b border-[#E59500] px-2 sm:px-6 lg:px-8";
+      x.className = "nav small font-manrope border-b border-[#E59500] px-2 sm:px-6 lg:px-8";
     }
   }
 

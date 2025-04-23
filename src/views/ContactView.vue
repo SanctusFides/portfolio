@@ -8,7 +8,7 @@
   <Navbar />
 
   <!-- <section class="content bg-[#002642] h-screen flex flex-col items-center justify-items-center"> -->
-  <section class="content bg-[#002642] h-screen">
+  <section class="content font-manrope bg-blue h-screen">
     <!-- container class for positioning the content in the middle and a litle bit down from the top -->
     <div class="container m-auto max-w-2xl py-16">
       <!-- this div is for the forms outter body -->
