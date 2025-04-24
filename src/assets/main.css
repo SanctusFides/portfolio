@@ -4,7 +4,10 @@
 
 @theme {
   --font-manrope: "Manrope", san-serif;
-  --color-blue: #002642;
+  --color-jblue: #002642;
+  --color-jyellow: #e59500;
+  --color-jclaret: #840032;
+  --color-jdarkblue: #03071D;
 }
 
 

@@ -15,15 +15,15 @@
   const emit = defineEmits(['submit'])
 
   const handleSubmit = async () => {
-    console.log("! Submit Button !");
+    // console.log("! Submit Button !");
     
     emit('submit', { ...form.value })
     const response = contactHandler(form.value);
     response.then((res) => {
-      console.log(res.status);
+      // console.log(res.status);
       
       if (res.status == 200) {
-        console.log('back from api');
+        // console.log('back from api');
         toast.success("Message Sent!")
       }
     }).catch((error) =>{
@@ -37,19 +37,19 @@
 <template>
   <form @submit.prevent="handleSubmit">
     <!-- This div is for sizing the inputs and arranging the form items -->
-    <div class="form flex flex-col items-center px-6 py-8 mb-4 border rounded-md m-4 ">
+    <div class="form flex flex-col items-center bg-jdarkblue px-6 py-8 mb-4 border border-jyellow rounded-md m-4">
       <div class="mb-4">
-        <label class="block" for="name">Name</label>
+        <label class="block text-white" for="name">Name</label>
         <input v-model="form.name" class="w-80 border-2 rounded" type="text" name="name" id="name" placeholder="John Doe" required>
       </div>
   
       <div class="mb-4">
-        <label class="block" for="name">Email</label>
+        <label class="block text-white" for="name">Email</label>
         <input v-model="form.email" class="w-80 border-2 rounded" type="email" name="name" id="name" placeholder="email@example.com">
       </div>
 
       <div class="mb-4">
-        <label class="block" for="name">Message</label>
+        <label class="block text-white" for="name">Message</label>
         <textarea 
           v-model="form.message"
           class="w-80 border-2 rounded"
@@ -73,17 +73,6 @@
 </template>
 
 <style scoped>
-  h1, label {
-    color: white;
-  }
-
-  .form {
-    background-color: var(--j-darkblue);
-  }
-
-  .div, .form {
-    border-color: var(--j-yellow);
-  }
 
   input, textarea {
     border-color: var(--j-claret);
@@ -92,11 +81,8 @@
     background-color: white;
   }
 
-  .pi {
-    color: black;
-  }
 
-
+/* Not going to use Tailwind for the submit button - since it has reasons for overlapping of elements that change on hover */
   .submit-button {
     background-color: var(--j-yellow);
     color: black;

@@ -8,34 +8,9 @@
 
 <template>
   <section>
-      <button @click="downloadResume()" class="downloadbbutton">
+      <button @click="downloadResume()" class="downloadbbutton bg-jyellow hover:bg-jclaret rounded-md py-[16px] px-[24px]
+                                               text-black hover:text-white text-2xl font-bold">
         Download Resume
       </button>
   </section>
 </template>
-
-<style scoped>
- button {
-    background-color: var(--j-yellow);
-    color: black;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    border-radius: 0.375rem;
-    font-weight: bold;
-    font-size: large;
- }
- button:hover {
-    background-color: var(--j-claret);
-    color: white;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    border-radius: 0.375rem;
-    font-weight: bold;
-    font-size: large;
- }
- 
-</style>
