@@ -10,7 +10,7 @@
 <template>
   <div class="content flex flex-col h-screen">
     <Navbar />
-    <section class="@container  font-manrope text-white">
+    <section class="@container grow-1 font-manrope text-white">
       <div class="flex flex-col @md:flex-row gap-8 md:gap-0 pt-4 md:-pt-0 w-full md:h-full">
         <div class="flex flex-col justify-center items-center md:flex-1 gap-3 md:gap-6">
           <h1 class="text-6xl md:text-9xl text-jyellow text-center">John Hines</h1>
@@ -24,7 +24,7 @@
         </div>
       </div>
     </section>
-    <!-- <Footer /> -->
+    <Footer />
   </div>
 </template>
 
