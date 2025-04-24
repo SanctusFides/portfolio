@@ -8,7 +8,7 @@
   <div class="flex flex-col h-dvh">    
     <Navbar />
     <!-- <section class="content bg-[#002642] h-screen flex flex-col items-center justify-items-center"> -->
-    <section class="content font-manrope bg-jblue">
+    <section class="font-manrope bg-jblue mb-auto">
       <!-- container class for positioning the content in the middle and a litle bit down from the top -->
       <div class="container m-auto max-w-2xl pt-8 md:pt-16">
         <!-- this div is for the forms outter body -->
