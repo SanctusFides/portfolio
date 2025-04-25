@@ -8,7 +8,7 @@
 </script>
 
 <template>
-  <div class="content flex flex-col h-screen">
+  <div class="content flex flex-col h-full">
     <Navbar />
     <section class="@container grow-1 font-manrope text-white">
       <div class="flex flex-col @md:flex-row gap-8 md:gap-0 pt-4 md:-pt-0 w-full md:h-full">
