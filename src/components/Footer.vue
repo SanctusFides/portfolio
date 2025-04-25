@@ -1,6 +1,6 @@
 <template>
   <!-- <section class="fixed bottom-0 w-full h-[45px] mb-[8px]"> -->
-  <section class="bg-jblue w-full">
+  <section class="bg-jblue w-full mt-8 lg:mt-0">
     <div class="footer  gap-5 h-full">
       <a href="https://www.linkedin.com/in/john-hines-788893183/">
         <svg class="mb-8 h-[45px] text-white hover:text-jyellow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.8 25.7" >

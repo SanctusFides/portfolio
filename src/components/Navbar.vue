@@ -20,52 +20,52 @@
 </script>
 
 <template>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Reason for having 2 nav separate navs is that it's easier to swap them out entirely vs having to transform them on the fly  -->
   <!-- nav big is reserved for full sized devices -->
   <nav class="nav big font-manrope bg-jdarkblue">
-      <div class="mx-auto max-w-7xl  px-2 md:px-6 lg:px-8">
-          <div class="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
-            <RouterLink class="flex flex-shrink-0 items-center mr-4" to="/">
-              <img class="h-16 w-auto" :src="logo" alt="John Hines Logo" />
-              <span class="hidden md:block text-jyellow text-3xl font-medium ml-2"
-                >John Hines
-              </span>
-            </RouterLink>
-            <div class="md:ml-auto">
-              <div class="flex space-x-5 py-3">
-                <RouterLink
-                  to="/"
-                  :class="[isActiveLink('/') ? 'bg-jclaret text-white' : 'text-white hover:bg-jyellow hover:text-black', 'text-xl', 'px-3', 'py-2', 'rounded-md']"
-                  >Home
-                </RouterLink>
-                <RouterLink
-                  to="/experience"
-                  :class="[isActiveLink('/experience') ? 'bg-jclaret text-white' : 'text-white hover:bg-jyellow hover:text-black', 'text-xl', 'px-3', 'py-2', 'rounded-md']"
-                  >Experience
-                </RouterLink>
-                <RouterLink
-                  to="/projects"
-                  :class="[isActiveLink('/projects') ? 'bg-jclaret text-white' : 'text-white hover:bg-jyellow hover:text-black', 'text-xl', 'px-3', 'py-2', 'rounded-md']"
-                  >Projects & Skills
-                </RouterLink>
-                <RouterLink
-                  to="/about"
-                  :class="[isActiveLink('/about') ? 'bg-jclaret text-white' : 'text-white hover:bg-jyellow hover:text-black', 'text-xl', 'px-3', 'py-2', 'rounded-md']"
-                  >About
-                </RouterLink>
-                <RouterLink
-                  to="/contact"
-                  :class="[isActiveLink('/contact') ? 'bg-jclaret text-white' : 'text-white hover:bg-jyellow hover:text-black', 'text-xl','px-3', 'py-2', 'rounded-md']"
-                  >Contact
-                </RouterLink>
-                <a href="javascript:void(0);" class="icon px-3 py-2" @click="collapse()">
-                 <i class="fa fa-bars"></i>
-                </a>
-              </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="mx-auto max-w-7xl  px-2 md:px-6 lg:px-8">
+        <div class="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
+          <RouterLink class="flex flex-shrink-0 items-center mr-4" to="/">
+            <img class="h-16 w-auto" :src="logo" alt="John Hines Logo" />
+            <span class="hidden md:block text-jyellow text-3xl font-medium ml-2"
+              >John Hines
+            </span>
+          </RouterLink>
+          <div class="md:ml-auto">
+            <div class="flex space-x-5 py-3">
+              <RouterLink
+                to="/"
+                :class="[isActiveLink('/') ? 'bg-jclaret text-white' : 'text-white hover:bg-jyellow hover:text-black', 'text-xl', 'px-3', 'py-2', 'rounded-md']"
+                >Home
+              </RouterLink>
+              <RouterLink
+                to="/experience"
+                :class="[isActiveLink('/experience') ? 'bg-jclaret text-white' : 'text-white hover:bg-jyellow hover:text-black', 'text-xl', 'px-3', 'py-2', 'rounded-md']"
+                >Experience
+              </RouterLink>
+              <RouterLink
+                to="/projects"
+                :class="[isActiveLink('/projects') ? 'bg-jclaret text-white' : 'text-white hover:bg-jyellow hover:text-black', 'text-xl', 'px-3', 'py-2', 'rounded-md']"
+                >Projects & Skills
+              </RouterLink>
+              <RouterLink
+                to="/about"
+                :class="[isActiveLink('/about') ? 'bg-jclaret text-white' : 'text-white hover:bg-jyellow hover:text-black', 'text-xl', 'px-3', 'py-2', 'rounded-md']"
+                >About
+              </RouterLink>
+              <RouterLink
+                to="/contact"
+                :class="[isActiveLink('/contact') ? 'bg-jclaret text-white' : 'text-white hover:bg-jyellow hover:text-black', 'text-xl','px-3', 'py-2', 'rounded-md']"
+                >Contact
+              </RouterLink>
+              <a href="javascript:void(0);" class="icon px-3 py-2" @click="collapse()">
+                <i class="fa fa-bars"></i>
+              </a>
             </div>
           </div>
         </div>
+      </div>
   </nav>
   <!-- Nav small is used for mobile device sizes, this is designed to be reactive for them -->
   <nav class="nav small font-manrope bg-jdarkblue border-b border-jyellow px-2 md:px-6 lg:px-8" id="navBar">
