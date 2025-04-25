@@ -16,7 +16,7 @@
           <p class="text-2xl lg:text-4xl text-center">Junior Software Engineer</p>
           <p class="text-xl lg:text-2xl">Full-Stack Developer</p>
         </div>
-        <div class="flex flex-col gap-8 lg:justify-center items-center">
+        <div class="flex flex-col gap-8 lg:justify-center items-center flex-1">
           <img class="rounded-full h-64 lg:h-96" :src="image" alt="image of John Hines" />
           <ResumeButton />
           <ContactButton />
