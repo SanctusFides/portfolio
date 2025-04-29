@@ -85,12 +85,12 @@
         <RouterLink
           to="/about"
           :class="[isActiveLink('/about') ? 'bg-jclaret text-white' : 'text-white hover:bg-jyellow hover:text-black', 'text-lg', 'px-3', 'py-2', 'rounded-md']"
-          >About
+          >About Me
         </RouterLink>
         <RouterLink
           to="/experience"
           :class="[isActiveLink('/experience') ? 'bg-jclaret text-white' : 'text-white hover:bg-jyellow hover:text-black', 'text-lg', 'px-3', 'py-2', 'rounded-md']"
-          >Experience
+          >Work & Experience
         </RouterLink>
         <!-- <RouterLink
           to="/projects"
