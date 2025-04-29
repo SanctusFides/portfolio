@@ -40,20 +40,20 @@
                 >Home
               </RouterLink>
               <RouterLink
-                to="/experience"
-                :class="[isActiveLink('/experience') ? 'bg-jclaret text-white' : 'text-white hover:bg-jyellow hover:text-black', 'text-xl', 'px-3', 'py-2', 'rounded-md']"
-                >Experience
+                to="/about"
+                :class="[isActiveLink('/about') ? 'bg-jclaret text-white' : 'text-white hover:bg-jyellow hover:text-black', 'text-xl', 'px-3', 'py-2', 'rounded-md']"
+                >About Me
               </RouterLink>
               <RouterLink
+                to="/experience"
+                :class="[isActiveLink('/experience') ? 'bg-jclaret text-white' : 'text-white hover:bg-jyellow hover:text-black', 'text-xl', 'px-3', 'py-2', 'rounded-md']"
+                >Work & Experience
+              </RouterLink>
+              <!-- <RouterLink
                 to="/projects"
                 :class="[isActiveLink('/projects') ? 'bg-jclaret text-white' : 'text-white hover:bg-jyellow hover:text-black', 'text-xl', 'px-3', 'py-2', 'rounded-md']"
                 >Projects & Skills
-              </RouterLink>
-              <RouterLink
-                to="/about"
-                :class="[isActiveLink('/about') ? 'bg-jclaret text-white' : 'text-white hover:bg-jyellow hover:text-black', 'text-xl', 'px-3', 'py-2', 'rounded-md']"
-                >About
-              </RouterLink>
+              </RouterLink> -->
               <RouterLink
                 to="/contact"
                 :class="[isActiveLink('/contact') ? 'bg-jclaret text-white' : 'text-white hover:bg-jyellow hover:text-black', 'text-xl','px-3', 'py-2', 'rounded-md']"
@@ -83,20 +83,20 @@
           >Home
         </RouterLink>
         <RouterLink
-          to="/experience"
-          :class="[isActiveLink('/experience') ? 'bg-jclaret text-white' : 'text-white hover:bg-jyellow hover:text-black', 'text-lg', 'px-3', 'py-2', 'rounded-md']"
-          >Experience
-        </RouterLink>
-        <RouterLink
-          to="/projects"
-          :class="[isActiveLink('/projects') ? 'bg-jclaret text-white' : 'text-white hover:bg-jyellow hover:text-black', 'text-lg', 'px-3', 'py-2', 'rounded-md']"
-          >Projects & Skills
-        </RouterLink>
-        <RouterLink
           to="/about"
           :class="[isActiveLink('/about') ? 'bg-jclaret text-white' : 'text-white hover:bg-jyellow hover:text-black', 'text-lg', 'px-3', 'py-2', 'rounded-md']"
           >About
         </RouterLink>
+        <RouterLink
+          to="/experience"
+          :class="[isActiveLink('/experience') ? 'bg-jclaret text-white' : 'text-white hover:bg-jyellow hover:text-black', 'text-lg', 'px-3', 'py-2', 'rounded-md']"
+          >Experience
+        </RouterLink>
+        <!-- <RouterLink
+          to="/projects"
+          :class="[isActiveLink('/projects') ? 'bg-jclaret text-white' : 'text-white hover:bg-jyellow hover:text-black', 'text-lg', 'px-3', 'py-2', 'rounded-md']"
+          >Projects & Skills
+        </RouterLink> -->
         <RouterLink
           to="/contact"
           :class="[isActiveLink('/contact') ? 'bg-jclaret text-white' : 'text-white hover:bg-jyellow hover:text-black', 'text-lg','px-3', 'py-2', 'rounded-md']"
