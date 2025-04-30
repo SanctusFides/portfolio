@@ -17,17 +17,7 @@ const router = createRouter({
       path: '/experience',
       name: 'experience',
       component: NotFoundView
-    },    
-    {
-      path: '/projects',
-      name: 'projects',
-      component: NotFoundView
     },
-    // {
-    //   path: '/skills',
-    //   name: 'skills',
-    //   component: NotFoundView
-    // },
     {
       path: '/about',
       name: 'about',
