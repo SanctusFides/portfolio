@@ -9,8 +9,7 @@
 
 <div class="content flex flex-col h-dvh">
   <Navbar />
-  <section class="@container font-manrope text-white grow-1 py-4 lg:py-3 ">
-    <!-- <div class="flex flex-col @lg:flex-row gap-8 lg:gap-0 pt-4 lg:-pt-0 w-full lg:h-full px-32"> -->
+  <section class="@container font-manrope text-white grow-1 py-4 lg:py-3 4xl:px-140">
     <div class="flex flex-col pt-4 lg:-pt-0 w-full lg:h-full px-4 lg:px-52">
       <div class="flex lg:flex-row justify-between lg:items-end">
         <h1 class="text-6xl lg:text-8xl text-jyellow font-bold">About Me</h1>
