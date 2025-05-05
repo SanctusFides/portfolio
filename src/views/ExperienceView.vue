@@ -3,47 +3,55 @@
   import Footer from '../components/Footer.vue';
   import FlavourAppBox from '../components/FlavourAppBox.vue';
   import PortfolioAppBox from '../components/PortfolioAppBox.vue'
-
-  const flavUrl = 'https://github.com/SanctusFides/Flavour-Palette-Public';
-  function visitURL(url) {
-    console.log("being clicked");
-  
-    window.location.href = url;
-  }
-
 </script>
 
 <template>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <div class="content flex flex-col h-dvh">
+    <Navbar />
+    <section class="@container font-manrope text-white grow-1 mx-auto w-full xl:max-w-3/4">
+      <div class="flex flex-col pt-4 lg:-pt-0 w-full lg:h-full px-4 pt-8 md:pt-16 ">
+        <h1 class="text-5xl lg:text-5xl text-jyellow font-bold mb-4">Projects</h1>
+        <div class="flex flex-col 2xl:flex-row gap-6">
+          <FlavourAppBox /> 
+          <PortfolioAppBox />
+        </div>
+        <div class="flex flex-col gap-3 lg:gap-6 py-5">
+          <h1 class="text-5xl lg:text-5xl text-jyellow font-bold">Work History</h1>
+          <div class="p-3 border-b-1 border-jyellow">
+            <h2 class="text-xl font-bold text-jyellow">Education Break</h2>
+            <h4 class="italic">Mar 2022 - Present</h4>
+            <p class="text-xl">
+              Pursued a career change into software engineering, during this time I completed a variety of courses and bootcamps focused on Java, Python, and web development, along with the Spring Boot and React frameworks.
+              <br>• Bootcamps Completed: Java, Spring Boot, Python
+              <br>• Courses Completed: 
+              <a href="https://java-programming.mooc.fi/" class="underline hover:text-jyellow">University of Helsinki’s MOOC Java I & II</a>, 
+              <a href="https://www.theodinproject.com/" class="underline hover:text-jyellow">The Odin Project</a>, 
+              <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science" class="underline hover:text-jyellow">Harvard CS50</a>
+            </p>
+          </div>
+          <div class="p-3 border-b-1 border-jyellow">
+            <h2 class="text-xl font-bold text-jyellow ">Google</h2>
+            <h4 class="italic">July 2019 - Mar 2022</h4>
+            <p class="text-xl">
+              After 6 years of consistent growth and customer satisfaction, Google acquired The Ordering.app and I was brought along 
+              to head the support team; lending my expertise for our merchant and industry needs while continuing to provide service 
+              for top performing clients.
+            </p>
+          </div>
+          <div class="p-3 border-jyellow">
+            <h2 class="text-xl font-bold text-jyellow ">The Ordering.app</h2>
+            <h4 class="italic">Jul 2013 - Jul 2019</h4>
+            <p class="text-xl">
+              Joined early stage startup as the first dedicated client service position and delivered service industry perspective
+              to management and active in road map feedback
 
-<div class="content flex flex-col h-dvh">
-  <Navbar />
-  <section class="@container font-manrope text-white grow-1 py-4 lg:py-3 mx-auto w-full xl:max-w-3/4">
-    <div class="flex flex-col pt-4 lg:-pt-0 w-full lg:h-full px-4 pt-8 md:pt-16 ">
-      <h1 class="text-5xl lg:text-5xl text-jyellow font-bold mb-4">Projects</h1>
-      <div class="flex flex-col 2xl:flex-row gap-6">
-        <FlavourAppBox /> 
-        <PortfolioAppBox />
+            </p>
+          </div>
+        </div>
       </div>
-
-      <div class="flex flex-col gap-3 lg:gap-6 py-5">
-        <h1 class="text-5xl lg:text-5xl text-jyellow font-bold">Work History</h1>
-        <p class="text-xl border-1 border-jyellow rounded p-3">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p class="text-xl border-1 border-jyellow rounded p-3">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-    </div>
-  </section>
-  <Footer />
+    </section>
+    <Footer />
 </div>
 
 
