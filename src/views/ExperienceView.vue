@@ -23,7 +23,10 @@
             <h4 class="italic">Mar 2022 - Present</h4>
             <p class="text-xl">
               Pursued a career change into software engineering, during this time I completed a variety of courses and bootcamps focused on Java, Python, and web development, along with the Spring Boot and React frameworks.
-              <br>• Bootcamps Completed: Java, Spring Boot, Python
+              <br>• Bootcamps Completed: 
+              <a href="https://www.udemy.com/course/the-complete-java-development-bootcamp/" class="underline hover:text-jyellow">Java</a>, 
+              <a href="https://www.udemy.com/course/the-complete-spring-boot-development-bootcamp/" class="underline hover:text-jyellow">Spring Boot</a>,
+              <a href="https://www.udemy.com/course/complete-python-bootcamp/" class="underline hover:text-jyellow">Python</a> 
               <br>• Courses Completed: 
               <a href="https://java-programming.mooc.fi/" class="underline hover:text-jyellow">University of Helsinki’s MOOC Java I & II</a>, 
               <a href="https://www.theodinproject.com/" class="underline hover:text-jyellow">The Odin Project</a>, 
