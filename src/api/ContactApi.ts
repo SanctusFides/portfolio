@@ -8,8 +8,9 @@ export type FormData = {
   date: string;
 }
 
-// Using a .env file to store the API key and email addresses for sending and receiving the emails sent from Resend 
-// const api_url: string = import.meta.env.VITE_API_EMAIL_URL;
+// Todo - need to look into relate limiting so that contact button can't be spammed 
+
+// Using netlify serverless function to handle Resend function for sending email.
 const api_url: string = '/.netlify/functions/emailer';
 
 // Need to validate the form details incase anything funky was changed on the source to remove the required checks

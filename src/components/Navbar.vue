@@ -22,7 +22,7 @@
 <template>
   <!-- Reason for having 2 nav separate navs is that it's easier to swap them out entirely vs having to transform them on the fly  -->
   <!-- nav big is reserved for full sized devices -->
-  <nav class="nav big font-manrope bg-jdarkblue">
+  <nav class="nav big font-manrope bg-jdarkblue w-full">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <div class="mx-auto max-w-7xl  px-2 md:px-6 lg:px-8">
         <div class="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
