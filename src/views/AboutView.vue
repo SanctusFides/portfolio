@@ -9,7 +9,7 @@
   <div class="content flex flex-col h-dvh">
     <Navbar />
     <section class="@container font-manrope text-white grow-1 py-4 lg:py-3" >
-      <div class="flex flex-col pt-4 lg:-pt-0 w-full lg:h-full px-4 lg:px-32 mx-auto max-w-3/4 4xl:max-w-2/4">
+      <div class="flex flex-col pt-4 lg:-pt-0 w-full lg:h-full px-4 lg:px-32 mx-auto 2xl:max-w-3/4 @8xl:max-w-2/4">
         <div class="flex lg:flex-row justify-between lg:items-end">
           <h1 class="text-6xl lg:text-8xl text-jyellow font-bold">About Me</h1>
           <img class="rounded-full h-32 lg:h-34" :src="image" alt="image of John Hines" />
