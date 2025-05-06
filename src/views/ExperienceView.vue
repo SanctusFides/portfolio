@@ -18,7 +18,7 @@
         </div>
         <div class="flex flex-col gap-3 lg:gap-6 py-5">
           <h1 class="text-5xl lg:text-5xl text-jyellow font-bold">Work History</h1>
-          <div class="p-3 border-b-1 border-jyellow">
+          <div class="pl-3 pb-3 border-b-1 border-jyellow">
             <h2 class="text-xl font-bold text-jyellow">Education Break</h2>
             <h4 class="italic">Mar 2022 - Present</h4>
             <p class="text-xl">
@@ -33,7 +33,7 @@
               <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science" class="underline hover:text-jyellow">Harvard CS50</a>
             </p>
           </div>
-          <div class="p-3 border-b-1 border-jyellow">
+          <div class="pl-3 pb-3 border-b-1 border-jyellow">
             <h2 class="text-xl font-bold text-jyellow ">Google</h2>
             <h4 class="italic">July 2019 - Mar 2022</h4>
             <p class="text-xl">
@@ -42,7 +42,7 @@
               for top performing clients.
             </p>
           </div>
-          <div class="p-3 border-jyellow">
+          <div class="pl-3 pb-3 border-jyellow">
             <h2 class="text-xl font-bold text-jyellow ">The Ordering.app</h2>
             <h4 class="italic">Jul 2013 - Jul 2019</h4>
             <p class="text-xl">

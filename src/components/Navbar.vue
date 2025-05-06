@@ -18,10 +18,10 @@
   }
 
 </script>
-
+<!-- Reason for having 2 nav separate navs is that it's easier to swap them out entirely vs having to transform them on the fly  -->
+<!-- nav big is reserved for full sized devices -->
+<!-- Nav small is used for mobile device sizes, this is designed to be reactive for them -->
 <template>
-  <!-- Reason for having 2 nav separate navs is that it's easier to swap them out entirely vs having to transform them on the fly  -->
-  <!-- nav big is reserved for full sized devices -->
   <nav class="nav big font-manrope bg-jdarkblue w-full">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <div class="mx-auto max-w-7xl  px-2 md:px-6 lg:px-8">
@@ -67,7 +67,6 @@
         </div>
       </div>
   </nav>
-  <!-- Nav small is used for mobile device sizes, this is designed to be reactive for them -->
   <nav class="nav small font-manrope bg-jdarkblue border-b border-jyellow px-2 md:px-6 lg:px-8" id="navBar">
     <div class="flex">
       <RouterLink class="mr-4" to="/">
@@ -92,11 +91,6 @@
           :class="[isActiveLink('/experience') ? 'bg-jclaret text-white' : 'text-white hover:bg-jyellow hover:text-black', 'text-lg', 'px-3', 'py-2', 'rounded-md']"
           >Work & Experience
         </RouterLink>
-        <!-- <RouterLink
-          to="/projects"
-          :class="[isActiveLink('/projects') ? 'bg-jclaret text-white' : 'text-white hover:bg-jyellow hover:text-black', 'text-lg', 'px-3', 'py-2', 'rounded-md']"
-          >Projects & Skills
-        </RouterLink> -->
         <RouterLink
           to="/contact"
           :class="[isActiveLink('/contact') ? 'bg-jclaret text-white' : 'text-white hover:bg-jyellow hover:text-black', 'text-lg','px-3', 'py-2', 'rounded-md']"
