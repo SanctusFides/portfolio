@@ -11,10 +11,9 @@
     <Navbar />
     <!-- <section class="@container font-manrope text-white grow-1 mx-auto w-full xl:max-w-3/4"> -->
     <section class="@container font-manrope text-white grow-1 py-4 lg:py-3">
-      <div class="flex flex-col pt-4 w-full lg:h-full px-4 lg:px-32 mx-auto 
-      @3xl:max-w-3/4 @8xl:max-w-2/4">
+      <div class="flex flex-col pt-4 w-full lg:h-full px-4 lg:px-32 mx-auto @3xl:max-w-3/4 @8xl:max-w-2/4">
         <h1 class="text-5xl lg:text-5xl text-jyellow font-bold mb-4">Projects</h1>
-        <div class="flex flex-col 2xl:flex-row gap-6">
+        <div class="flex flex-col xl:flex-row gap-6">
           <FlavourAppBox /> 
           <PortfolioAppBox />
         </div>
