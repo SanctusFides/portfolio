@@ -61,7 +61,7 @@
       </div>
       
       <div class="justify-self-center ">
-        <button type="submit" class="submit-button">
+        <button type="submit" class="submit-button cursor-pointer">
           <span class="flex items-center gap-2">
             Submit
             <i class="pi pi-send"></i>

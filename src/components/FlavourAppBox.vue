@@ -6,11 +6,13 @@
 <template>
   <div class="flex flex-col gap-4 md:flex-row md:gap-2 text-center md:text-left md:justify-between basis-1/2
               text-xl border-1 border-jyellow rounded p-6 transition-colors duration-300 hover:bg-jdarkblue">
-    <div>
-      <h3 class="text-jyellow text-2xl"> Flavour Palette </h3>
-      <p class="text-base mb-4">Java & Spring Boot web app that allows users to search, create, favorite and rate recipes. 
-        SQL is used to store recipes, including ingredients and steps.
-        Users can signup via email or login with Google using OAuth2</p>
+    <div class="flex flex-col justify-between">
+      <div>
+        <h3 class="text-jyellow text-2xl"> Flavour Palette </h3>
+        <p class="text-base mb-4">Java & Spring Boot web app that allows users to search, create, favorite and rate recipes. 
+          SQL is used to store recipes, including ingredients and steps.
+          Users can signup via email or login with Google using OAuth2</p>
+      </div>
       <div class="flex justify-center md:justify-normal gap-2">
         <ViewButton title="Live" url="https://flavour-palette.fly.dev/"/>
         <ViewButton title="on Git" url="https://github.com/SanctusFides/Flavour-Palette-Public"/>
