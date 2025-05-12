@@ -9,7 +9,7 @@
     <div>
       <h3 class="text-jyellow text-2xl"> Portfolio Website </h3>
       <p class="text-base mb-4">The very page you are on! Designed to be a way for companies to contact me and written in Javascript and 
-        using the Vue templating framework. The contact page is using a Netlify serverless function intended to avoid the need of hosting
+        using the Vue templating framework. The contact page is using a Netlify serverless function intended to avoid the need and cost of hosting
         an API server for such a simple task. 
       </p>
       <ViewButton title="on Git" url="https://github.com/SanctusFides/portfolio"/>

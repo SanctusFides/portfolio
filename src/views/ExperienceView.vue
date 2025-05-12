@@ -41,15 +41,37 @@
               to head the support team; lending my expertise for our merchant and industry needs while continuing to provide service 
               for top performing clients.
             </p>
+            <div class="pl-3">
+              <ul>
+                <li>• Served as lead for a support and onboarding team that grew 875% between July 19, 2019 and June 2, 2021</li>
+                <li>• Transitioned flagship integrations to leading point of sale systems (Square & Clover) and provided product and
+                  engineering team with client feedback and bug report</li>
+                <li>• Provided detailed bug reports with logs and reproduction steps for engineering and tested fixes in sandbox and 
+                  production</li>
+                <li>• Collected and analyzed AWS server logs affecting users, merchants and the support team</li>
+                <li>• Performed internal QA for The Ordering.app’s Play Store application and authored user documentation</li>
+              </ul>
+            </div>
           </div>
           <div class="pl-3 pb-3 border-jyellow">
             <h2 class="text-xl font-bold text-jyellow ">The Ordering.app</h2>
             <h4 class="italic">Jul 2013 - Jul 2019</h4>
             <p class="text-xl">
               Joined early stage startup as the first dedicated client service position and delivered service industry perspective
-              to management and active in road map feedback
-
+              to management and active in road map feedback.
             </p>
+            <div class="pl-3">
+              <ul>
+                <li>• Handled client calls, emails and SMS for quick and critical fixes, and provided in-field installation, service, and
+                  training</li>
+                <li>• Conducted QA, tracked down and report bugs to engineering, and tested bug fixes in sandbox and production
+                  environments</li>
+                <li>• Created documentation and video walkthroughs to train support hires to maintain a 92+% customer satisfaction
+                  rating</li>
+                <li>• Supported The Ordering.app customers through ownership change after the company was acquired by Google
+                  in July 2019</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
