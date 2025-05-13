@@ -1,5 +1,4 @@
 export const handler = async (event) => {
-  console.log('Inside netlify funct handler');
   const RESEND_API_KEY = process.env.VITE_RESEND_API_KEY;
   const body = JSON.parse(event.body);
   const name = body.name;
@@ -15,6 +14,7 @@ export const handler = async (event) => {
   //   },
   //   body: 'Hello from Lambda!',
   // }
+  // TODO change out these from and to plaintext with emails from env - someone might rig theirs up and send me emails instead
   const res = await fetch('https://api.resend.com/emails', {
     method: 'POST',
     headers: {
