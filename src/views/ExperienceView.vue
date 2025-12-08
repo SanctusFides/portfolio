@@ -1,6 +1,7 @@
 <script setup>
   import Navbar from '../components/Navbar.vue';
   import Footer from '../components/Footer.vue';
+  import VeourAppBox from '../components/VeourAppBox.vue';
   import FlavourAppBox from '../components/FlavourAppBox.vue';
   import PortfolioAppBox from '../components/PortfolioAppBox.vue'
 </script>
@@ -13,8 +14,9 @@
       <div class="flex flex-col pt-4 w-full lg:h-full px-4 lg:px-32 mx-auto @3xl:max-w-3/4 @8xl:max-w-2/4">
         <h1 class="text-5xl lg:text-5xl text-jyellow font-bold mb-4">Projects</h1>
         <div class="flex flex-col xl:flex-row gap-6">
-          <FlavourAppBox /> 
+          <VeourAppBox />
           <PortfolioAppBox />
+          <FlavourAppBox /> 
         </div>
         <div class="flex flex-col gap-3 lg:gap-6 py-5">
           <h1 class="text-5xl lg:text-5xl text-jyellow font-bold">Work History</h1>
