@@ -1,8 +1,7 @@
 <script setup>
-  defineProps({
-    title: String,
-    url: String
-  })
+  const downloadVeour = () => {
+    window.open('/files/Veour.zip', '_blank');
+  }
 </script>
 
 <template>
