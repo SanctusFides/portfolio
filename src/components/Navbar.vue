@@ -24,7 +24,7 @@
 <template>
   <nav class="nav big font-manrope bg-jdarkblue w-full">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <div class="mx-auto max-w-7xl  px-2 md:px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl px-2 md:px-6 lg:px-8">
         <div class="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
           <RouterLink class="flex flex-shrink-0 items-center mr-4" to="/">
             <img class="h-16 w-auto" :src="logo" alt="John Hines Logo" />
@@ -49,11 +49,6 @@
                 :class="[isActiveLink('/experience') ? 'bg-jclaret text-white' : 'text-white hover:bg-jyellow hover:text-black', 'text-xl', 'px-3', 'py-2', 'rounded-md']"
                 >Work & Experience
               </RouterLink>
-              <!-- <RouterLink
-                to="/projects"
-                :class="[isActiveLink('/projects') ? 'bg-jclaret text-white' : 'text-white hover:bg-jyellow hover:text-black', 'text-xl', 'px-3', 'py-2', 'rounded-md']"
-                >Projects & Skills
-              </RouterLink> -->
               <RouterLink
                 to="/contact"
                 :class="[isActiveLink('/contact') ? 'bg-jclaret text-white' : 'text-white hover:bg-jyellow hover:text-black', 'text-xl','px-3', 'py-2', 'rounded-md']"
