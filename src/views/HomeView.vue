@@ -1,6 +1,7 @@
 <script setup>
   import Navbar from '../components/Navbar.vue';
   import Footer from '../components/Footer.vue';
+  import LinkedInButton from '../components/LinkedInButton.vue';  
   import ResumeButton from '../components/ResumeButton.vue';  
   import ContactButton from '../components/ContactButton.vue';
   import image from '@/assets/img/john.jpg';
@@ -18,8 +19,9 @@
         </div>
         <div class="flex flex-col gap-8 justify-center items-center flex-1">
           <img class="rounded-full h-64 lg:h-96" :src="image" alt="image of John Hines" />
+          <LinkedInButton />
           <ResumeButton />
-          <ContactButton />
+          <ContactButton class="mt-4"/>
         </div>
       </div>
     </section>
